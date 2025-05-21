@@ -11,9 +11,7 @@
     }
 
 /* BODY */
-body {
-    overflow: hidden;
-}
+
 #underdev h3 {
     position: absolute;
     z-index: 99;
@@ -26,7 +24,7 @@ body {
     padding-left: calc(+200px);
     padding-right: calc(+200px);
     bottom: 25px;
-    left: 150px; */
+    left: 150px; 
     font-family: "Poppins";
 }
     .body {
