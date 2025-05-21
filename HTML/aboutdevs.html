@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet the Devs</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/BaitCatcher.favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/BaitCatcher.favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/BaitCatcher.favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="../CSS/aboutdevs.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+    <link rel="stylesheet" href="../CSS/header.css">
+    <link rel="stylesheet" href="../CSS/font.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="../JS/aboutdevs.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <a href="../index.html">
+            <img class="logo" src="../logo.png">
+        </a>
+        <div class="nav-links">
+            <a href="../index.html#features-overview">
+                <h4 class="features">Features</h4>
+            </a>
+            <a href="../HTML/tutorials.html">
+                <h4 class="tutorials">Tutorials</h4>
+            </a>
+            <a href="../HTML/download.html">
+                <div class="downloadbox">
+                    <h4 class="downloads">Downloads</h4>
+                </div>
+            </a>
+        </div>
+    </header>
+
+    <div id="content">
+        <h1 style="color: white; font-size: 100px; text-align: center; margin-bottom: 40px;">DEVELOPERS</h1>
+        <h1 style="color: white; font-size: 18px; text-align: center; margin-bottom: 5px;">On a mission of promoting online spaces safe from the crime of online scams</h1>
+        <style>
+            #content {
+                display: block;
+                text-align: center;
+                margin: 20px auto;
+            }
+            .circle-img {
+                border: 5px solid transparent;
+                border-radius: 50%;
+                height: 150px;
+                width: 150px;
+                margin: 10px;
+                object-fit: cover;
+                display: inline-block;
+            }
+            .image-item {
+                display: inline-block;
+                vertical-align: top;
+                width: 200px;
+                text-align: center;
+                display: inline-block;
+                margin: 20px;
+            }
+            .highlighted-name {
+                font-size: 18px;
+                font-weight: bold;
+                color: #FF6347;
+                margin-top: 10px 0;
+                transition: color 0.3s ease;
+            }
+            @media (max-width: 768px) {
+                .circle-img {
+                    border-radius: 50%;
+                    height: 150px;
+                    width: 150px;
+                    margin-bottom: 10px;
+                    object-fit: cover;
+                    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+                }
+                .image-item {
+                    margin: 15px;
+                    
+                }
+                
+
+
+            }
+        </style>
+        <div class="image-item">
+            <img class="circle-img" src="../images/devs/dev-miles.png.png" alt="Image 1" class = "hover-image">
+            <p class="hover-text">Miles</p>
+            <p class="highlighted-name">Miles Rodriguez</p>
+            <ul style="text-align: left; display: inline-block; font-size: 18px; color:white;">
+                <li>. Graphic Designer</li>
+                <li>. Web Developer</li>
+                <li>. Debugger</li>
+                <li>. Game Developer</li>
+            </ul>
+            
+        </div>
+        <div class="image-item">
+            <img class="circle-img" src="../images/devs/dev-ephraim.png.png" alt="Image 2">
+            <p class="highlighted-name">Ephraim Calalang</p>
+            <ul style="text-align: left; display: inline-block; font-size: 18px; color:white;">
+                <li>. Graphic Designer</li>
+                <li>. Web Developer</li>
+                <li>. Game Developer</li>
+                
+            </ul>
+        </div>
+        <div class="image-item">
+            <img class="circle-img" src="../images/devs/dev-jenna.png.png" alt="Image 3">
+            <p class="highlighted-name">Jenna Ramos</p>
+            <ul style="text-align: left; display: inline-block; font-size: 18px; color:white;">
+                <li>. Graphic Designer</li>
+                <li>. Web Developer</li>
+                
+                
+            </ul>
+            </ul>
+        </div>
+        <div class="image-item">
+            <img class="circle-img" src="../images/devs/dev-angel.png.png" alt="Image 4">
+            <p class="highlighted-name">Angel Sarmiento</p>
+            <ul style="text-align: left; display: inline-block; font-size: 18px; color:white;">
+                <li>. Graphic Designer</li>
+                <li>. Web Developer</li>
+                
+                
+            </ul>
+        </div>
+        <div class="image-item">
+            <img class="circle-img" src="../images/devs/dev-dondon.png.png" alt="Image 5">
+            <p class="highlighted-name">DonDon Decosta</p>
+            <ul style="text-align: left; display: inline-block; font-size: 18px; color:white;">
+                <li>. Graphic Designer</li>
+                <li>. Web Developer</li>
+                
+            </ul>
+        </div>
+        <div class="image-item">
+            <img class="circle-img" src="../images/devs/dev-rence.png.png" alt="Image 6">
+            <p class="highlighted-name">Rence Santos</p>
+            
+            </ul>
+        </div>
+    </div>
+         <script>
+            const imageItems = document.querySelectorAll('.image-item');
+            imageItems.forEach(item => {
+                const image = item.querySelector('.circle-img');
+                const text = item.querySelector('.highlighted-name');
+                
+                item.addEventListener('mouseover', () => {
+                image.style.transform = 'scale(1.1)';
+                image.style.transition = 'transform 0.3s ease, box-shadow 0.3s ease';
+                image.style.boxShadow = '0 4px 15px rgba(0, 0, 0, 0.2)';
+                
+                if (text) {
+                    text.style.color = '#FFA500';
+                    text.style.transition = 'color 0.3s ease';
+                }
+            });
+            
+            item.addEventListener('mouseout', () => {
+                image.style.transform = 'scale(1)';
+                image.style.boxShadow = 'none';
+                
+                if (text) {
+                    text.style.color = '#FF6347';
+                }
+            });
+        });
+</script>
+    <footer>
+        <div class="footer-logo">
+            <img class="footer-img-logo" src="../images/footer/img-logo.png">
+        </div>
+        <div class="link-box">
+            <div class="links">
+                <ul>
+                    <li><a id="link-features" href="../index.html#features-overview">Features</a></li>
+                    <li><a id="link-tutorials" href="../HTML/tutorials.html">Tutorials</a></li>
+                </ul>
+                <ul>
+                    <li><a id="link-download" href="../HTML/download.html">Download</a></li>
+                    <li><a id="link-aboutdevs" href="../HTML/aboutdevs.html">About the Developers</a></li>
+                </ul>
+            </div>
+            <div class="contact">
+                <p>Contact us: <a id="link-email" href="mailto:email@baitcatcher.org">email@baitcatcher.org</a></p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com" target="_blank"><img src="../images/footer/logo-facebook.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com" target="_blank"><img src="../images/footer/logo-instagram.png" alt="Instagram"></a>
+                    <a href="https://www.tiktok.com" target="_blank"><img src="../images/footer/logo-tiktok.png" alt="TikTok"></a>
+                    <a href="https://www.youtube.com" target="_blank"><img src="../images/footer/logo-youtube.png" alt="YouTube"></a>
+                </div>
+            </div>
+        </div>
+        <img class="footer-img-gradient" src="../images/footer/img-gradient.png">
+    </footer>
+</body>
+</html>

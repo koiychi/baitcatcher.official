@@ -1,0 +1,67 @@
+/*
+    /*var images = ['top-image1.png', 'top-image2.png', 'top-image3.png', 'top-image4.png'];
+    var index = 0; 
+    setInterval(function() {
+        index = (index + 1) % images.length;
+        document.getElementById('top-image').src = images[index];
+    }, 5000);  */
+
+
+
+
+
+
+
+
+var images = ['top-image1.png', 'top-image2.png', 'top-image3.png', 'top-image4.png'];
+var index = 0;
+var currentImage = document.getElementById('top-image');
+var nextImage = document.createElement('img');
+nextImage.style.position = 'absolute';
+nextImage.style.left = '100%';
+nextImage.style.top = '0';
+currentImage.parentNode.appendChild(nextImage);
+
+function slideImage() {
+    index = (index + 1) % images.length;
+    nextImage.src = images[index];
+    
+    // Ensure both images are visible during transition
+    currentImage.style.display = 'block';
+    nextImage.style.display = 'block';
+    
+    // Slide out current image
+    currentImage.style.transition = 'left 0.5s ease-out';
+    currentImage.style.left = '-100%';
+    
+    // Slide in next image
+    nextImage.style.transition = 'left 0.5s ease-out';
+    nextImage.style.left = '0';
+    
+    // After transition, reset positions and swap images
+    setTimeout(function() {
+        currentImage.style.transition = 'none';
+        currentImage.style.left = '100%';
+        currentImage.src = images[(index + 1) % images.length]; // Preload next image
+        
+        // Swap currentImage and nextImage
+        [currentImage, nextImage] = [nextImage, currentImage];
+        
+        // Reset transitions for smooth next slide
+        currentImage.style.transition = '';
+        nextImage.style.transition = '';
+        
+        // Hide the off-screen image
+        nextImage.style.display = 'none';
+    }, 500);
+}
+
+// Start the slideshow when the page loads
+window.addEventListener('load', function() {
+    // Set initial state
+    currentImage.src = images[0];
+    nextImage.src = images[1];
+    nextImage.style.display = 'none';
+    
+    setInterval(slideImage, 5000);
+});

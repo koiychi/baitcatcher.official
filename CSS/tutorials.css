@@ -1,0 +1,106 @@
+.tutorial-logo{
+  margin-top: 70px;
+  width: 35%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+	opacity: 0;
+	transform: translateY(-20px);
+	transition: opacity 1.5s ease, transform 1.5s ease;
+}
+
+.tutorial-logo.fade-in {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+
+#heading {
+  margin-left: 35%;
+  margin-top: -50px;
+}
+#subheading {
+  margin-top: 60px;
+}
+
+
+* {
+    font-family: "Poppins";
+}
+
+
+.img-cellphone {
+  height: 700px;
+  width: auto;
+  border-radius: 10px;
+  margin-top: -480px;
+  margin-left: 900px;
+}
+
+
+.img-messages {
+  margin-top: 30px;
+  height: auto;
+  width: 1101px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.img-profileCheck {
+  height: auto;
+  width: 733px;
+  margin-top: -350px;
+  margin-left: 700px;
+}
+
+.img-cellphone2 {
+  height: 700px;
+  width: auto;
+  border-radius: 10px;
+  margin-top: -380px;
+  margin-left: 260px;
+}
+
+.img-catchScam {
+  height: 300px;
+  width: auto;
+	margin-left: 700px;
+	margin-top: -430px;
+}
+
+hr {
+	border: 1px solid white;
+	width: 80%; 
+	margin-top: 80px;
+}
+
+.img-quote-learn2 {
+	width: 500px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+	margin-top: 120px;
+}
+
+#button-catching {
+	margin-top: 20px;
+	width: 260px;
+	height: 90px;
+	font-size: 30px;
+	color: #000;
+	background-color: rgba(128, 128, 128, 0.2);;
+	border: none;
+	border-radius: 15px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	font-family: 'Poppins';
+	color: white;
+	margin-left: auto;
+  margin-right: auto;
+  display: block;
+	position: relative;
+}

@@ -1,11 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BaitCatcher</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/BaitCatcher.favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/BaitCatcher.favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/BaitCatcher.favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+    <link rel="stylesheet" href="CSS/header.css">
+    <link rel="stylesheet" href="CSS/font.css">
+    <!-- <script src="404.js" defer></script> -->
+    <script src="JS/index.jsX"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
 </head>
+
 <body>
-    Hello
+    <!-- SLIDING PICTURES
+    <div class="slidingpictures">
+        <img id="top-image" src="../images/top-images/top-image1.png">
+    </div>
+    -->
+
+    <!-- SLIDING PICTURES -->
+    <div class="slidingpictures">
+        <div class="alert">We have a new home! Visit us. :></div>
+        <img id="top-image" src="images/top-images/top-image1.png">
+    </div>
+    <!--
+    <div id="underdev">
+        <h3> <span style="font-size: 25px;">You catched us, but we're not scammers.</span> <br> This page is under development</h3>
+    </div> -->
+
+
+    <!-- HEADER -->
+    <header class="header">
+        <a href="index.Xhtml">
+            <img class="logo" src="logo.png">
+        </a>
+        <div class="nav-links">
+            <a href="#Xfeatures-overview">
+                <h4 class="features">Features</h4>
+            </a>
+            
+            <a href="HTML/tutorials.xhtml">
+                <h4 class="tutorials">Tutorials</h4>
+            </a>
+
+            <a href="HTML/download.Xhtml">
+                <div class="downloadbox">
+                    <h4 class="downloads">Downloads</h4>
+                </div>
+            </a>
+        </div>
+    </header>
+
+    <!-- BODY -->
+    <div class="body">
+        <div class="div-img-quote-learn">
+            <img class="img-quote-learn" src="images/img-quote-learn.png">
+
+            <h3 class="quote-learn">
+                Be Aware About Online Scams Through <span id="text-experience" onmouseover="hoverChangeBGEffect()" onmouseleave="resethoverChangeBGEffect()">Experience!</span>
+            </h3>
+        </div>
+
+        <h1 id="features-overview">Overview</h1>
+
+        <div class="card-container"> 
+                <div class="card">
+                    <img id="index-img" src="/images/redflags.png" alt="Spot the Red Flags">
+                    <h2 id="index-heading">Spot the Red Flags</h2>
+                    <br>
+                    <p id="index-p">Learn about spotting the signs of an online scam.</p>
+                    <a href="HTML/tutorials.html#spot" id="index-link">
+                        <button id="learnbutton">Learn more ></button>
+                    </a>
+                    
+                </div>
+                <div>
+                    <button id="prev" style="display: inline-block;" onclick="prev()"> < </button>
+                    <button id="next" style="display: inline-block;" onclick="next()"> > </button>
+                </div>
+            </div>
+            <br>
+            <hr style="background-color: white; width: 800px;">
+            <div class="footer">
+                <img class="img-quote-learn2" src="images/img-quote-learn.png" style="width: 400px;">
+                <br>
+                <a href="HTML/download.html">
+                    <button id="catchbutton">Start Catching</button>
+                </a>
+            </div>
+        </div>
+           
+    </div>
+    <br>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-logo">
+            <img class="footer-img-logo" src="../images/footer/img-logo.png">
+        </div>
+
+        <div class="link-box">
+            <div class="links">
+                <ul>
+                  <li><a id="link-features" href="../index.html#features-overview">Features</a></li>
+                  <li><a id="link-tutorials" href="../HTML/tutorials.html">Tutorials</a></li>
+                </ul>
+                <ul>
+                  <li><a id="link-download" href="../HTML/download.html">Download</a></li>
+                  <li><a id="link-aboutdevs" href="../HTML/aboutdevs.html">About the Developers</a></li>
+                </ul>
+              </div>
+              <div class="contact">
+                <p>Contact us: <a id="link-email" href="mailto:email@baitcatcher.org">email@baitcatcher.org</a></p>
+                <div class="social-icons">
+                  <a href="https://www.facebook.com" target="_blank"><img src="../images/footer/logo-facebook.png" alt="Facebook"></a>
+                </div>
+              </div>
+        </div>
+
+        <img class="footer-img-gradient" src="../images/footer/img-gradient.png">
+    </footer>
 </body>
 </html>

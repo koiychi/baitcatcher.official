@@ -1,0 +1,13 @@
+BAITCATCHER WEBSITE
+
+FONT: Poppins
+    DECLARATION: font-family: "Poppins";
+
+FONT SIZE: rem
+    2px = 1 rem
+
+COLORS:
+    ORANGE: #ea680a
+    GRAY (BGColor): #07090a
+    WHITE: #ffffff
+    GRAY (Buttons): #181F23

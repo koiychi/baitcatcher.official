@@ -1,0 +1,84 @@
+/* HTML */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+html {
+    font-size: 2px;
+    scroll-behavior: smooth;
+    margin: 0;
+}
+body {
+    font-family: "Poppins";
+    background-color: #07090a;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+/* HEADER */
+.header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width: 745.8rem;
+    width: auto;
+    height: auto;
+    z-index: 1000;
+    background-color: #ea680a;
+    color: #ffffff;
+    font-family: "Poppins Regular";
+    padding: 5rem;
+    font-size: 10rem;
+}
+.logo {
+    padding-left: 12rem;
+    width: 125rem;
+}
+.nav-links {
+    display: flex; 
+    gap: 20rem;
+
+}
+.downloadbox {
+    width: fit-content;
+    border-radius: 7.5rem;
+    padding: 1.5rem 20rem;
+    background-color: #181f23;
+}
+.features{
+
+    transition: color 0.3s ease;
+}
+.tutorials {
+    transition: color 0.3s ease;
+}
+.downloads {
+    transition: color 0.3s ease;
+}
+.downloadbox {
+    transition: color 0.3s ease;
+    transition: border-radius 0.3s ease;
+}
+.features:hover {
+    border-radius: 2.5rem;
+    color: #181f23;
+    transition: color 0.3s ease;
+}
+.tutorials:hover {
+    border-radius: 2.5rem;
+    color: #181f23;
+    transition: color 0.3s ease;
+}
+.downloads:hover {
+    border-radius: 2.5rem;
+    color: #ea680a;
+    transition: color 0.3s ease;
+}
+.downloadbox:hover {
+    border-radius: 2.5rem;
+    color: #ea680a;
+    transition: color 0.3s ease;
+    transition: border-radius 0.3s ease;
+}
+
