@@ -11,7 +11,9 @@
     }
 
 /* BODY */
-
+body {
+    overflow: hidden;
+}
 #underdev h3 {
     position: absolute;
     z-index: 99;
